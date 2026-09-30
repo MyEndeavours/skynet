@@ -16,7 +16,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&display=swap">
 <script>
   document.documentElement.classList.add('js');
-  try { var st = localStorage.getItem('skynet-theme'); if (st === 'light' || st === 'dark') document.documentElement.setAttribute('data-theme', st); } catch (e) {}
+  var st = null;
+  try { st = localStorage.getItem('skynet-theme'); } catch (e) {}
+  /* Dark is the default for every visitor. The sun/moon button lets them switch. */
+  document.documentElement.setAttribute('data-theme', st === 'light' ? 'light' : 'dark');
 </script>
 <link rel="stylesheet" href="styles.css">
 </head>
