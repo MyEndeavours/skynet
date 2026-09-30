@@ -47,6 +47,7 @@ Copy one of the entries in `PROJECTS` and edit it. Each project has:
 - `code` – tracking number (optional, generated if left out)
 - `preview` – only used when there's no `image`; controls the drawn preview
 
+
 Leave any field empty (`''` or `[]`) and that part is hidden.
 
 ## Contact form
